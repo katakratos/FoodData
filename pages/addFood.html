@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Add Food</title>
+    <!-- ... -->
+    <style>
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><span>F</span>ood<span>D</span>ata</a>
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown">
+                <a href="#">Services</a>
+                <div class="dropdown-content">
+                    <a href="index.html">List of Food</a>
+                    <a href="displayClassAndSubClass.html">List of Class and SubClass</a>
+                    <a href="addFood.html">Add Food</a>
+                </div>
+            </li>
+            <li><a href="#">Log in</a></li>
+           <li><a href="#">Sign up</a></li> 
+           <a href="makeQuery.html" class="btn-query">Make query</a>
+
+        </ul>
+        
+    </header>
+    <section class="banniere1" id="banniere">
+        <div class="contenu1">
+          <h1>Add food in the ontology</h1>  
+            <!-- <div class="box1">
+                <button class="btn">Add food</button>
+                <button class="btn">Add Ingredient</button>
+                <button class="btn">Add component</button>
+            
+        </div> -->
+    </section>
+
+    <div class="addFood">
+        <label for="food-name">Nom de la nourriture :</label>
+        <input type="text" id="food-name" style="width: 200px; height: 30px;"/><br>
+      
+        <label for="food-image">Image :</label>
+        <input type="file" id="food-image" accept="image/jpeg, image/png, image/jpg" /><br>
+      
+        <label for="food-description">Description :</label>
+        <textarea id="food-description" style="width: 300px; height: 60px;"></textarea><br>
+
+        <!-- <label for="food-description">Ingredients :</label>
+        <textarea id="food-description" style="width: 300px; height: 60px;"></textarea><br>
+
+        <label for="food-description">FoodComponent :</label>
+        <textarea id="food-description" style="width: 300px; height: 60px;"></textarea><br>
+       -->
+        <button onclick="addDishToFuseki()">Ajouter la nourriture</button>
+      </div>
+
+      <script src="addFood.js"></script>
+</body>
+</html>

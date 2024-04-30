@@ -1,0 +1,1383 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/paulinio/ontologiesFood#"
+     xml:base="http://www.semanticweb.org/paulinio/ontologiesFood"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:ontologiesFood="http://www.semanticweb.org/paulinio/ontologiesFood#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#composedOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#composedOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Dish"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Ingredient"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#hasComponent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#hasComponent">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Food"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#FoodComponent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#hasIngredient -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#hasIngredient">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Food"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Ingredient"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#isFrom -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#isFrom">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Dish"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#descript_of_dish -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#descript_of_dish">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Dish"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#image_of_dish -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#image_of_dish">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Dish"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#name_of_dish -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#name_of_dish">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Dish"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#name_of_foodComponent -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#name_of_foodComponent">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#FoodComponent"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#name_of_ingredient -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#name_of_ingredient">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Ingredient"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#Arroz_de_marisco -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#Arroz_de_marisco">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Dish"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#Bacalhau_a_bras -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#Bacalhau_a_bras">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Dish"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#Bolo_polana -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#Bolo_polana">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Dish"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#Caldeirada_de_peixe -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#Caldeirada_de_peixe">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Dish"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#Camarao_grelhado -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#Camarao_grelhado">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Dish"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#Camarao_à_moçambicana -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#Camarao_à_moçambicana">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Dish"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#Caril_de_cabrito -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#Caril_de_cabrito">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Dish"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#Caril_de_galinda -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#Caril_de_galinda">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Dish"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#Chamussas -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#Chamussas">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Dish"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#Dish -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#Dish">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#Feijoada -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#Feijoada">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Dish"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#Food -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#Food"/>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#FoodComponent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#FoodComponent"/>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#Franco_à_Zambeziana -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#Franco_à_Zambeziana">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Dish"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#Galinha_à_cafreal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#Galinha_à_cafreal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Dish"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#Galinha_à_zambeziana -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#Galinha_à_zambeziana">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Dish"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#Ingredient -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#Ingredient">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#Mango_peperoncini_salsa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#Mango_peperoncini_salsa">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Dish"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#Matapa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#Matapa">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Dish"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#Mozambique -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#Mozambique">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#Pao_com_chourico -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#Pao_com_chourico">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Dish"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#Place -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#Place"/>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#Xima -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#Xima">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Dish"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#poulet_piri-piri -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#poulet_piri-piri">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Dish"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#Acides_gras -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#Acides_gras">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#FoodComponent"/>
+        <name_of_foodComponent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Acide gras</name_of_foodComponent>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#Antioxydants -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#Antioxydants">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#FoodComponent"/>
+        <name_of_foodComponent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Antioxydants</name_of_foodComponent>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#Arroz_de_marisco_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#Arroz_de_marisco_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Arroz_de_marisco"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Dish"/>
+        <hasComponent rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Fibre"/>
+        <hasComponent rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Lipide"/>
+        <hasComponent rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Protéine"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#caldo_de_marisco"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#eau"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#fruit_de_mer"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#oignons"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#persil"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#poivre_noir"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#riz"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#sauce_de_piri-piri"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#sel"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#tomate"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#huile_d&apos;olive"/>
+        <descript_of_dish rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Arroz de Marisco est un plat traditionnel portugais qui se compose de riz cuit dans un bouillon de fruits de mer riche et aromatique</descript_of_dish>
+        <image_of_dish rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://github.com/jiofidelus/tsotsa/blob/main/TSOTSAImg_dataset/Mozambique/Arroz%20de%20marisco.jpeg?raw=true</image_of_dish>
+        <name_of_dish rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Arroz de Marisco</name_of_dish>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#Bacalhau_a_bras_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#Bacalhau_a_bras_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Bacalhau_a_bras"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Dish"/>
+        <hasComponent rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Lipide"/>
+        <hasComponent rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Protéine"/>
+        <hasComponent rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Sodium"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#ail"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#morue"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#oeuf"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#oignons"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#olive_noir"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#persil"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#pomme_de_terre"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#sel"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#huile_d&apos;olive"/>
+        <descript_of_dish rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Le Bacalhau à Brás est un plat emblématique de la cuisine portugaise composé de morue salée (bacalhau), d&apos;oignons, de pommes de terre et d&apos;œufs.</descript_of_dish>
+        <image_of_dish rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://github.com/jiofidelus/tsotsa/blob/main/TSOTSAImg_dataset/Mozambique/bacalhau-a-bras.jpg?raw=true</image_of_dish>
+        <name_of_dish rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bacalhau a Bras</name_of_dish>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#Bolo_polana_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#Bolo_polana_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Bolo_polana"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Dish"/>
+        <hasComponent rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Glucide"/>
+        <hasComponent rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Lipide"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Protéine"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#miel"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#noix_de_coco"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#oeuf"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#pomme_de_terre"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#vanille"/>
+        <descript_of_dish rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Le Bolo Polana est un gâteau emblématique du Mozambique, connu pour sa texture moelleuse et sa saveur délicieusement chocolatée.</descript_of_dish>
+        <image_of_dish rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://github.com/jiofidelus/tsotsa/blob/main/TSOTSAImg_dataset/Mozambique/bolo%20polana.jpg?raw=true</image_of_dish>
+        <name_of_dish rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bolo polana</name_of_dish>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#Caldeirada_de_peixe_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#Caldeirada_de_peixe_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Caldeirada_de_peixe"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Dish"/>
+        <hasComponent rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Acides_gras"/>
+        <hasComponent rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Fibre"/>
+        <hasComponent rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Glucide"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#ail"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#coriandre"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#feuille_de_laurier"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#oignons"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#piments"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#poisson"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#poivre_noir"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#pomme_de_terre"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#safran"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#sel"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#tomate"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#huile_d&apos;olive"/>
+        <descript_of_dish rdf:datatype="http://www.w3.org/2001/XMLSchema#string">La caldeirada de peixe est un ragoût de poisson traditionnel portugais qui met en valeur une variété de poissons et de fruits de mer, cuits avec des pommes de terre, des tomates, des oignons et des herbes aromatiques.</descript_of_dish>
+        <image_of_dish rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://github.com/jiofidelus/tsotsa/blob/main/TSOTSAImg_dataset/Mozambique/caldeirada%20de%20peixe.jpg?raw=true</image_of_dish>
+        <name_of_dish rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Caldeirada de peixe</name_of_dish>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#Calorie -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#Calorie">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#FoodComponent"/>
+        <name_of_foodComponent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">calorie</name_of_foodComponent>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#Camarao_grelhado_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#Camarao_grelhado_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Camarao_grelhado"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Dish"/>
+        <hasComponent rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Glucide"/>
+        <hasComponent rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Lipide"/>
+        <hasComponent rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Protéine"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#ail"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#crevette"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#cumin"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#oignons"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#piments"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#pois"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#pomme_de_terre"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#sel"/>
+        <descript_of_dish rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Le camarão grelhado, ou crevettes grillées, est un plat délicieux et simple où les crevettes sont grillées à la perfection.</descript_of_dish>
+        <image_of_dish rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://github.com/jiofidelus/tsotsa/blob/main/TSOTSAImg_dataset/Mozambique/camarao_grelhado.jpg?raw=true</image_of_dish>
+        <name_of_dish rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Camarao Grelhado</name_of_dish>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#Camarao_à_moçambicana_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#Camarao_à_moçambicana_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Camarao_à_moçambicana"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Dish"/>
+        <hasComponent rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Glucide"/>
+        <hasComponent rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Lipide"/>
+        <hasComponent rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Protéine"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#ail"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#crevette"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#legumes"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#oignons"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#paprika"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#persil"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#poivre_noir"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#sauce_de_piri-piri"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#sel"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#huile_d&apos;olive"/>
+        <descript_of_dish rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Le Camarão à Moçambicana est un plat traditionnel du Mozambique qui met en valeur des crevettes cuisinées dans une sauce épicée et parfumée.</descript_of_dish>
+        <image_of_dish rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://github.com/jiofidelus/tsotsa/blob/main/TSOTSAImg_dataset/Mozambique/camarao%20%C3%A0%20ma%C3%A7ambicana.jpg?raw=true</image_of_dish>
+        <name_of_dish rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Camarao à moçambicana</name_of_dish>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#Caril_de_cabrito_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#Caril_de_cabrito_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Caril_de_cabrito"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Dish"/>
+        <hasComponent rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Glucide"/>
+        <hasComponent rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Lipide"/>
+        <hasComponent rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Protéine"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#ail"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#curry"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#oignons"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#sel"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#tomate"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#viande_d&apos;agneau"/>
+        <descript_of_dish rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Le cabrito est généralement préparé en rôtissant ou en cuisant lentement la viande pour obtenir une texture tendre et juteuse.</descript_of_dish>
+        <image_of_dish rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://github.com/jiofidelus/tsotsa/blob/main/TSOTSAImg_dataset/Cap-Vert/Caril%20de%20Cabrito.jpg?raw=true</image_of_dish>
+        <name_of_dish rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Caril de Cabrito</name_of_dish>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#Caril_de_galinha_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#Caril_de_galinha_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Caril_de_galinda"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Dish"/>
+        <hasComponent rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Glucide"/>
+        <hasComponent rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Lipide"/>
+        <hasComponent rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Protéine"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#ail"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#ananas"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#clou_de_girofle"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#coriandre"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#curry"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#gingembre"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#lait_de_coco"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#piments"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#poitrine_de_poulet"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#riz"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#safran"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#sel"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#tomate"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#vinaigre_de_cidre"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#huile_d&apos;olive"/>
+        <descript_of_dish rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C&apos;est un plat savoureux et épicé, apprécié pour sa combinaison de saveurs et sa polyvalence dans les accompagnements, tels que le riz ou les pains plats.</descript_of_dish>
+        <image_of_dish rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://github.com/jiofidelus/tsotsa/blob/main/TSOTSAImg_dataset/Mozambique/caril%20de%20galinha.jpg?raw=true</image_of_dish>
+        <name_of_dish rdf:datatype="http://www.w3.org/2001/XMLSchema#string">caril de Galinha</name_of_dish>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#Chamussas_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#Chamussas_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Chamussas"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Dish"/>
+        <hasComponent rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Fibre"/>
+        <hasComponent rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Glucide"/>
+        <hasComponent rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Lipide"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#farce"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#sauce_chutney"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#tomate"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#huile_d&apos;olive"/>
+        <descript_of_dish rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Les chamussas sont souvent frites jusqu&apos;à ce qu&apos;elles soient croustillantes et dorées, ce qui leur confère une texture croquante à l&apos;extérieur et une garniture savoureuse à l&apos;intérieur.</descript_of_dish>
+        <image_of_dish rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://github.com/jiofidelus/tsotsa/blob/main/TSOTSAImg_dataset/Mozambique/Chamussas.jpeg?raw=true</image_of_dish>
+        <name_of_dish rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chamussas</name_of_dish>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#Feijoada_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#Feijoada_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Dish"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Feijoada"/>
+        <hasComponent rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Glucide"/>
+        <hasComponent rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Lipide"/>
+        <hasComponent rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Protéine"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#ail"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#feuille_de_laurier"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#haricot_rouge"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#oignons"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#poitrine_de_porc"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#queue_de_porc"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#saucisse"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#sel"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#travers_de_porc"/>
+        <descript_of_dish rdf:datatype="http://www.w3.org/2001/XMLSchema#string">La feijoada est un plat traditionnel  qui consiste en un ragoût riche et savoureux à base de haricots noirs et de viandes.</descript_of_dish>
+        <image_of_dish rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://github.com/jiofidelus/tsotsa/blob/main/TSOTSAImg_dataset/Cap-Vert/Feijoada.jpg?raw=true</image_of_dish>
+        <name_of_dish rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Feijoada</name_of_dish>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#Fibre -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#Fibre">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#FoodComponent"/>
+        <name_of_foodComponent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fibre</name_of_foodComponent>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#Franco_à_Zambeziana_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#Franco_à_Zambeziana_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Dish"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Franco_à_Zambeziana"/>
+        <hasComponent rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Glucide"/>
+        <hasComponent rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Lipide"/>
+        <hasComponent rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Protéine"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#ail"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#cacahuète"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#citron"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#lait_de_coco"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#oignons"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#piments"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#poivre_blanc"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#poulet"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#sel"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#huile_d&apos;olive"/>
+        <descript_of_dish rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Le Frango à Zambeziana est souvent accompagné de riz, de légumes ou de salades pour compléter le repas. C&apos;est un plat apprécié pour son goût relevé et sa cuisson savoureuse du poulet.</descript_of_dish>
+        <image_of_dish rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://github.com/jiofidelus/tsotsa/blob/main/TSOTSAImg_dataset/Mozambique/franco%20%C3%A0%20zambeziana.jpg?raw=true</image_of_dish>
+        <name_of_dish rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Franco à zambeziana</name_of_dish>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#Galinha_à_cafreal_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#Galinha_à_cafreal_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Dish"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Galinha_à_cafreal"/>
+        <hasComponent rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Fibre"/>
+        <hasComponent rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Protéine"/>
+        <hasComponent rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Vitamines"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#banane_frites"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#oignons"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#paprika"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#poulet"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#riz"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#sauce_cafreal"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#tomate"/>
+        <descript_of_dish rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Le Galinha à Cafreal est souvent accompagné de riz ou de pains plats, et il est apprécié pour sa combinaison de saveurs épicées et herbacées qui font de ce plat une expérience culinaire délicieuse.</descript_of_dish>
+        <image_of_dish rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://github.com/jiofidelus/tsotsa/blob/main/TSOTSAImg_dataset/Mozambique/Galinha%20%C3%A0%20Cafrial.jpeg?raw=true</image_of_dish>
+        <name_of_dish rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Galinha à cafreal</name_of_dish>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#Galinha_à_zambeziana_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#Galinha_à_zambeziana_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Dish"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Galinha_à_zambeziana"/>
+        <hasComponent rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Fibre"/>
+        <hasComponent rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Protéine"/>
+        <hasComponent rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Vitamines"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#herbe_aromatique"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#noix_de_coco"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#oignons"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#poulet"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#riz"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#tomate"/>
+        <descript_of_dish rdf:datatype="http://www.w3.org/2001/XMLSchema#string">La Galinha à Zambeziana est généralement servie avec du riz, des légumes ou d&apos;autres accompagnements de votre choix.</descript_of_dish>
+        <image_of_dish rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://github.com/jiofidelus/tsotsa/blob/main/TSOTSAImg_dataset/Mozambique/Galinha%20zambeziana.jpg?raw=true</image_of_dish>
+        <name_of_dish rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Galinha à zambeziana</name_of_dish>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#Glucide -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#Glucide">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#FoodComponent"/>
+        <name_of_foodComponent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">glucide</name_of_foodComponent>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#Lipide -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#Lipide">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#FoodComponent"/>
+        <name_of_foodComponent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lipide</name_of_foodComponent>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#Mango_peperoncini_salsa_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#Mango_peperoncini_salsa_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Dish"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Mango_peperoncini_salsa"/>
+        <hasComponent rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Antioxydants"/>
+        <hasComponent rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Fibre"/>
+        <hasComponent rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Vitamines"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#citron"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#coriandre"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#oignons"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#piments"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#sel"/>
+        <descript_of_dish rdf:datatype="http://www.w3.org/2001/XMLSchema#string">La salsa à la mangue et aux piments est une délicieuse combinaison sucrée et épicée. Cette salsa est préparée en mélangeant des mangues fraîches coupées en dés avec des piments peperoncini finement hachés.</descript_of_dish>
+        <image_of_dish rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://github.com/jiofidelus/tsotsa/blob/main/TSOTSAImg_dataset/Mozambique/mango-peperoncini-salsa.jpg?raw=true</image_of_dish>
+        <name_of_dish rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mango peperoncini salsa</name_of_dish>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#Matapa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#Matapa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Dish"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Matapa"/>
+        <hasComponent rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Acides_gras"/>
+        <hasComponent rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Fibre"/>
+        <hasComponent rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Protéine"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#lait_de_coco"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#noix_de_coco"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#poulet"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#tomate"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#huile_d&apos;olive"/>
+        <descript_of_dish rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Le Matapa est souvent servi avec du riz ou du xima (une bouillie de maïs) et peut être accompagné de viande ou de poisson.</descript_of_dish>
+        <image_of_dish rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://github.com/jiofidelus/tsotsa/blob/main/TSOTSAImg_dataset/Mozambique/matapa.jpg?raw=true</image_of_dish>
+        <name_of_dish rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matapa</name_of_dish>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#Matapa_de_caranguepo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#Matapa_de_caranguepo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Dish"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Matapa"/>
+        <hasComponent rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Acides_gras"/>
+        <hasComponent rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Fibre"/>
+        <hasComponent rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Protéine"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#crabe"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#feuille_de_laurier"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#lait_de_coco"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#noix_de_coco"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#tomate"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#huile_d&apos;olive"/>
+        <descript_of_dish rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Le Matapa de Caranguejo est une variante spécifique du plat traditionnel mozambicain Matapa, qui intègre des crabes dans la recette.</descript_of_dish>
+        <image_of_dish rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://github.com/jiofidelus/tsotsa/blob/main/TSOTSAImg_dataset/Mozambique/matapa%20de%20Caranguepo.jpg?raw=true</image_of_dish>
+        <name_of_dish rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matapa de caranguepo</name_of_dish>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#Protéine -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#Protéine">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#FoodComponent"/>
+        <name_of_foodComponent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">protéine</name_of_foodComponent>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#Sodium -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#Sodium">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#FoodComponent"/>
+        <name_of_foodComponent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sodium</name_of_foodComponent>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#Vitamines -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#Vitamines">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#FoodComponent"/>
+        <name_of_foodComponent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vitamine</name_of_foodComponent>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#Xima_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#Xima_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Dish"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Xima"/>
+        <hasComponent rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Fibre"/>
+        <hasComponent rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Glucide"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#eau"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#farine_de_manioc"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#sel"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#huile_d&apos;olive"/>
+        <descript_of_dish rdf:datatype="http://www.w3.org/2001/XMLSchema#string">La xima est couramment servie en accompagnement de ragoûts, de curry ou de plats en sauce, et elle est souvent consommée en formant de petites boules ou en l&apos;utilisant comme cuillère pour savourer les saveurs accompagnantes.</descript_of_dish>
+        <image_of_dish rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://github.com/jiofidelus/tsotsa/blob/main/TSOTSAImg_dataset/Mozambique/xima.jpeg?raw=true</image_of_dish>
+        <name_of_dish rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Xima</name_of_dish>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#ail -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#ail">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Ingredient"/>
+        <name_of_ingredient rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ail</name_of_ingredient>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#ananas -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#ananas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Ingredient"/>
+        <name_of_ingredient rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ananas</name_of_ingredient>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#banane_frites -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#banane_frites">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Ingredient"/>
+        <name_of_ingredient rdf:datatype="http://www.w3.org/2001/XMLSchema#string">banane frites</name_of_ingredient>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#buerre -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#buerre">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Ingredient"/>
+        <name_of_ingredient rdf:datatype="http://www.w3.org/2001/XMLSchema#string">buerre</name_of_ingredient>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#cacahuète -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#cacahuète">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Ingredient"/>
+        <name_of_ingredient rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cacahuète</name_of_ingredient>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#caldo_de_marisco -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#caldo_de_marisco">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Ingredient"/>
+        <name_of_ingredient rdf:datatype="http://www.w3.org/2001/XMLSchema#string">caldo de marisco</name_of_ingredient>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#celeri -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#celeri">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Ingredient"/>
+        <name_of_ingredient rdf:datatype="http://www.w3.org/2001/XMLSchema#string">celeri</name_of_ingredient>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#chorizo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#chorizo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Ingredient"/>
+        <name_of_ingredient rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chorizo</name_of_ingredient>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#citron -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#citron">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Ingredient"/>
+        <name_of_ingredient rdf:datatype="http://www.w3.org/2001/XMLSchema#string">citron</name_of_ingredient>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#clou_de_girofle -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#clou_de_girofle">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Ingredient"/>
+        <name_of_ingredient rdf:datatype="http://www.w3.org/2001/XMLSchema#string">clou de girofle</name_of_ingredient>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#coriandre -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#coriandre">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Ingredient"/>
+        <name_of_ingredient rdf:datatype="http://www.w3.org/2001/XMLSchema#string">coriandre</name_of_ingredient>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#crabe -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#crabe">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Ingredient"/>
+        <name_of_ingredient rdf:datatype="http://www.w3.org/2001/XMLSchema#string">crabe</name_of_ingredient>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#crevette -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#crevette">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Ingredient"/>
+        <name_of_ingredient rdf:datatype="http://www.w3.org/2001/XMLSchema#string">crevette</name_of_ingredient>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#cumin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#cumin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Ingredient"/>
+        <name_of_ingredient rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cumin</name_of_ingredient>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#curry -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#curry">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Ingredient"/>
+        <name_of_ingredient rdf:datatype="http://www.w3.org/2001/XMLSchema#string">curry</name_of_ingredient>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#eau -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#eau">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Ingredient"/>
+        <name_of_ingredient rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eau</name_of_ingredient>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#farce -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#farce">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Ingredient"/>
+        <name_of_ingredient rdf:datatype="http://www.w3.org/2001/XMLSchema#string">farce</name_of_ingredient>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#farine_de_manioc -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#farine_de_manioc">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Ingredient"/>
+        <name_of_ingredient rdf:datatype="http://www.w3.org/2001/XMLSchema#string">farine de manioc</name_of_ingredient>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#feuille_de_laurier -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#feuille_de_laurier">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Ingredient"/>
+        <name_of_ingredient rdf:datatype="http://www.w3.org/2001/XMLSchema#string">feuille de laurier</name_of_ingredient>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#fruit_de_mer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#fruit_de_mer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Ingredient"/>
+        <name_of_ingredient rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fruit de mer</name_of_ingredient>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#gingembre -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#gingembre">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Ingredient"/>
+        <name_of_ingredient rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gingembre</name_of_ingredient>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#haricot_rouge -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#haricot_rouge">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Ingredient"/>
+        <name_of_ingredient rdf:datatype="http://www.w3.org/2001/XMLSchema#string">haricot rouge</name_of_ingredient>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#herbe_aromatique -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#herbe_aromatique">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Ingredient"/>
+        <name_of_ingredient rdf:datatype="http://www.w3.org/2001/XMLSchema#string">herbe aromatique</name_of_ingredient>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#lait_de_coco -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#lait_de_coco">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Ingredient"/>
+        <name_of_ingredient rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lait de coco</name_of_ingredient>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#legumes -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#legumes">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Ingredient"/>
+        <name_of_ingredient rdf:datatype="http://www.w3.org/2001/XMLSchema#string">legume</name_of_ingredient>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#miel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#miel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Ingredient"/>
+        <name_of_ingredient rdf:datatype="http://www.w3.org/2001/XMLSchema#string">miel</name_of_ingredient>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#morue -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#morue">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Ingredient"/>
+        <name_of_ingredient rdf:datatype="http://www.w3.org/2001/XMLSchema#string">morue</name_of_ingredient>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#noix_de_coco -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#noix_de_coco">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Ingredient"/>
+        <name_of_ingredient rdf:datatype="http://www.w3.org/2001/XMLSchema#string">noix de coco</name_of_ingredient>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#oeuf -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#oeuf">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Ingredient"/>
+        <name_of_ingredient rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oeuf</name_of_ingredient>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#oignons -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#oignons">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Ingredient"/>
+        <name_of_ingredient rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oignon</name_of_ingredient>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#olive_noir -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#olive_noir">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Ingredient"/>
+        <name_of_ingredient rdf:datatype="http://www.w3.org/2001/XMLSchema#string">olive noir</name_of_ingredient>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#pain -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#pain">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Ingredient"/>
+        <name_of_ingredient rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pain</name_of_ingredient>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#pao_com_chourico_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#pao_com_chourico_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Dish"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Pao_com_chourico"/>
+        <hasComponent rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Glucide"/>
+        <hasComponent rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Lipide"/>
+        <hasComponent rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Protéine"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#chorizo"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#herbe_aromatique"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#legumes"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#pain"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#sauce_de_piri-piri"/>
+        <descript_of_dish rdf:datatype="http://www.w3.org/2001/XMLSchema#string">le chouriço est souvent préalablement grillé ou cuit à la poêle pour libérer ses arômes et rendre sa texture plus tendre. Ensuite, des tranches de chouriço sont insérées dans le pain, créant ainsi un sandwich chaud et savoureux.</descript_of_dish>
+        <image_of_dish rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://github.com/jiofidelus/tsotsa/blob/main/TSOTSAImg_dataset/Mozambique/pao-com-chourico.jpg?raw=true</image_of_dish>
+        <name_of_dish rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pao com chourico</name_of_dish>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#paprika -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#paprika">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Ingredient"/>
+        <name_of_ingredient rdf:datatype="http://www.w3.org/2001/XMLSchema#string">paprika</name_of_ingredient>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#persil -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#persil">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Ingredient"/>
+        <name_of_ingredient rdf:datatype="http://www.w3.org/2001/XMLSchema#string">persil</name_of_ingredient>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#piments -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#piments">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Ingredient"/>
+        <name_of_ingredient rdf:datatype="http://www.w3.org/2001/XMLSchema#string">piment</name_of_ingredient>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#pois -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#pois">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Ingredient"/>
+        <name_of_ingredient rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pois</name_of_ingredient>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#poisson -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#poisson">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Ingredient"/>
+        <name_of_ingredient rdf:datatype="http://www.w3.org/2001/XMLSchema#string">poisson</name_of_ingredient>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#poitrine_de_porc -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#poitrine_de_porc">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Ingredient"/>
+        <name_of_ingredient rdf:datatype="http://www.w3.org/2001/XMLSchema#string">poitrine de porc</name_of_ingredient>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#poitrine_de_poulet -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#poitrine_de_poulet">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Ingredient"/>
+        <name_of_ingredient rdf:datatype="http://www.w3.org/2001/XMLSchema#string">poitrine de poulet</name_of_ingredient>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#poivre_blanc -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#poivre_blanc">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Ingredient"/>
+        <name_of_ingredient rdf:datatype="http://www.w3.org/2001/XMLSchema#string">poivre blanc</name_of_ingredient>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#poivre_noir -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#poivre_noir">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Ingredient"/>
+        <name_of_ingredient rdf:datatype="http://www.w3.org/2001/XMLSchema#string">poivre noir</name_of_ingredient>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#poivron -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#poivron">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Ingredient"/>
+        <name_of_ingredient rdf:datatype="http://www.w3.org/2001/XMLSchema#string">poivron</name_of_ingredient>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#poivron_rouge -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#poivron_rouge">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Ingredient"/>
+        <name_of_ingredient rdf:datatype="http://www.w3.org/2001/XMLSchema#string">poivron rouge</name_of_ingredient>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#pomme_de_terre -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#pomme_de_terre">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Ingredient"/>
+        <name_of_ingredient rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pomme de terre</name_of_ingredient>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#poulet -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#poulet">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Ingredient"/>
+        <name_of_ingredient rdf:datatype="http://www.w3.org/2001/XMLSchema#string">poulet</name_of_ingredient>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#poulet_au_piri-piri_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#poulet_au_piri-piri_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Dish"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#poulet_piri-piri"/>
+        <hasComponent rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Calorie"/>
+        <hasComponent rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Fibre"/>
+        <hasComponent rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Protéine"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#ail"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#citron"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#paprika"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#piments"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#poivron_rouge"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#poulet"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#sel"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#huile_d&apos;olive"/>
+        <descript_of_dish rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Le poulet de Piri-Piri est un plat épicé originaire du Portugal qui met en valeur des morceaux de poulet grillés et marinés dans une sauce piquante à base de piment piri-piri, d&apos;ail, de citron et d&apos;herbes aromatiques.</descript_of_dish>
+        <image_of_dish rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://github.com/jiofidelus/tsotsa/blob/main/TSOTSAImg_dataset/Mozambique/piri-piri.jpg?raw=true</image_of_dish>
+        <name_of_dish rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Piri -piri au poulet</name_of_dish>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#queue_de_porc -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#queue_de_porc">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Ingredient"/>
+        <name_of_ingredient rdf:datatype="http://www.w3.org/2001/XMLSchema#string">queue de porc</name_of_ingredient>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#riz -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#riz">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Ingredient"/>
+        <name_of_ingredient rdf:datatype="http://www.w3.org/2001/XMLSchema#string">riz</name_of_ingredient>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#safran -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#safran">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Ingredient"/>
+        <name_of_ingredient rdf:datatype="http://www.w3.org/2001/XMLSchema#string">safran</name_of_ingredient>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#sauce_cafreal -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#sauce_cafreal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Ingredient"/>
+        <name_of_ingredient rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sauce cafreal</name_of_ingredient>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#sauce_chutney -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#sauce_chutney">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Ingredient"/>
+        <name_of_ingredient rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sauce de chutney</name_of_ingredient>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#sauce_de_piri-piri -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#sauce_de_piri-piri">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Ingredient"/>
+        <name_of_ingredient rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sauce de piri-piri</name_of_ingredient>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#saucisse -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#saucisse">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Ingredient"/>
+        <name_of_ingredient rdf:datatype="http://www.w3.org/2001/XMLSchema#string">saucisse</name_of_ingredient>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#sel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#sel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Ingredient"/>
+        <name_of_ingredient rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sel</name_of_ingredient>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#tomate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#tomate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Ingredient"/>
+        <name_of_ingredient rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tomate</name_of_ingredient>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#travers_de_porc -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#travers_de_porc">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Ingredient"/>
+        <name_of_ingredient rdf:datatype="http://www.w3.org/2001/XMLSchema#string">travers de porc</name_of_ingredient>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#vanille -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#vanille">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Ingredient"/>
+        <name_of_ingredient rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vanille</name_of_ingredient>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#vinaigre_de_cidre -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#vinaigre_de_cidre">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Ingredient"/>
+        <name_of_ingredient rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vinaigre de cidre</name_of_ingredient>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#huile_d&apos;olive -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#huile_d&apos;olive">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Ingredient"/>
+        <name_of_ingredient rdf:datatype="http://www.w3.org/2001/XMLSchema#string">huile d&apos;olive</name_of_ingredient>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulinio/ontologiesFood#viande_d&apos;agneau -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulinio/ontologiesFood#viande_d&apos;agneau">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulinio/ontologiesFood#Ingredient"/>
+        <name_of_ingredient rdf:datatype="http://www.w3.org/2001/XMLSchema#string">viande d&apos;agneau</name_of_ingredient>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
+        <rdfs:comment xml:lang="fr">Base de connaissance sur la nourriture</rdfs:comment>
+        <rdfs:comment xml:lang="en">Food kwnoledge</rdfs:comment>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

@@ -1,0 +1,769 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'poppins',sans-serif;
+  scroll-behavior: smooth;
+
+}
+p{
+  font-weight: 300;
+  color:#111;
+}
+header{
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  padding: 20px 10px;
+  width: 100%;
+  z-index: 1;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  transition: 0.5s;
+
+}
+.logo{
+  /*color: #fff;*/
+  font-weight: bold;
+  font-size: 2em;
+  text-decoration: none;
+}
+
+.logo span {
+  color: #fb911f;
+}
+
+.navbar{
+  display: flex;
+  position: relative;
+}
+.navbar li{
+  list-style: none;
+
+}
+.navbar a{
+  /*color: #fff;*/ 
+  text-decoration: none;
+  margin-left: 30px;
+  font-weight: 700;
+
+}
+.btn-query{
+  padding: 10px 20px;
+  background: #fb911f;
+  margin-top: -10px;
+  text-transform: uppercase;
+
+}
+.btn-query:hover{
+  background: #d87710;
+  transition: ease-out;
+}
+
+header .navbar li a:hover{
+ color: #fb911f;
+ border-bottom: 2px solid #fb911f;  
+}
+
+.banniere{
+  position: relative;
+  margin-top: 10px;
+  width: 80%;
+  min-height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 220px;
+  height: 300px;
+  /* background-image: url('../images/rdf.jpg'); */
+  background-color: #d87710;
+  /* background-size: cover; */
+  /* height: 516px;
+  width: 1440px; */
+}
+.banniere .contenu{
+  max-width: 50%;
+  text-align: center;
+}
+
+.banniere .contenu h2{
+  color: #fff;
+  font-size: 2em;
+  text-transform: capitalize;
+}
+.contenu p:nth-child(2){
+  color: #ffff;
+  font-size: 1.2em;
+}
+.input{
+  margin-top: 20px;
+  border-radius: 5px 0px 0px 5px;
+  height: 40px;
+  width: 250px;
+  border:none ;
+  padding: 5px;
+
+}
+
+button{
+  height: 40px;
+  border-radius: 0px 5px 5px 0px;
+  border: none;
+  width: 80px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    /* max-width: 50%; */
+    text-align: center;
+    color: #fff; /* Assuming you want white text */
+    /*background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    padding: 5px; /* Add some padding for content spacing */
+    margin-top: 150px;
+  }
+  
+  .item {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-left: 30px;
+    margin-top: 20px;
+  }
+  .box {
+    display: flex;
+    justify-content: center;
+    
+  }
+  div a{
+    text-decoration: none;
+    
+  }
+ 
+  section{
+    padding: 40px;
+    
+  }
+  .row{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .row .nb-container{
+    position: relative;
+    display: flex;
+    width: 48%;
+    justify-content: center;
+    align-items: center;
+  }
+  .row .nb-container h3{
+    margin-bottom: 20px;
+
+  }
+  .titre-text {
+    color: #000;
+    font-size: 1.8em;
+    font-weight: 300px;
+    text-transform: capitalize;
+  }
+ 
+ 
+
+  /* gallery section start */
+
+.food-container {
+    width: 100%;
+    float: left;
+    padding-top: 30px;
+}
+
+.food-image img {
+    width: 100%;
+    float: left;
+    min-height: 182px;
+}
+
+.food-gallery {
+    width: 100%;
+    float: left;
+    background-color: #ffffff;
+    height: auto;
+    padding: 20px 20px;
+    box-shadow: 0px 0px 6px 6px #f4f3f2;
+}
+.food-gallery:hover {
+    box-shadow: 0px 0px 0px 0px;
+}
+
+.types_text {
+    width: 100%;
+    float: left;
+    font-size: 22px;
+    color: #2f2e2d;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+
+.looking_text {
+    width: 100%;
+    float: left;
+    font-size: 18px;
+    color: rgb(69, 165, 243);
+    text-align: center;
+    margin: 0px;
+    font-weight: bold;
+}
+
+.read-more {
+    width: 150px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 20px;
+    display: flex;
+}
+
+.read-more a {
+    width: 100%;
+    float: left;
+    font-size: 16px;
+    color: #fefefd;
+    text-align: center;
+    background-color: rgb(69, 165, 243);
+    font-weight: bold;
+    padding: 10px;
+}
+
+.read-more a:hover {
+    color: #fefefd;
+    background-color: #363636;
+}
+
+
+#food-container1 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  grid-gap: 5px;
+  width: 85%;
+ 
+  
+}
+
+#food-container1 > div {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+/* css pour ajouter la nourriture */
+.addFood {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: right;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 50px;
+  background-color: #fb911f;
+  border-radius: 20px;
+  padding: 20px;
+  }
+  .banniere1{
+    display: flex;
+    align-content: space-between;
+    align-items: justify;
+    margin-top:20px;
+    margin-left: 400px;
+    
+  }
+  .btn{
+    background-color: #578de9;
+    width: 80px;
+    vertical-align: center;
+  }
+
+  /* style des elements dans le binding */
+  .meal-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    height: 400px; /* Adjust height as needed */
+    border: 2px solid #111;
+    margin: 0px 50px 10px 185px;
+    padding: 10px;
+    box-shadow: #212529;
+    border-radius: 10px;  
+      
+  }
+  
+  .meal-item img {
+    margin-bottom: 10px; /* Adjust margins as desired */
+    height: 150px;
+    width:80px
+  }
+  header.sticky{
+    background: #fff;
+    /* padding: 10px 10px; */
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.05);
+  }
+
+  header.sticky li a:hover{
+    color: #fb911f;
+    border: 2px solid #fb911f;
+  }
+ 
+  .container1 {
+    display: flex;
+    justify-content: space-between;
+    /* max-width: 50%; */
+    text-align: center;
+   /* Assuming you want white text */
+    background-color: rgba(0, 0, 0, 0.5);   
+    padding: 5px; /* Add some padding for content spacing */
+    margin-top: 20px;
+    width: 50%;
+    margin-left: 450px;
+  }
+
+  /* css de la page makeQuery.html */
+
+  body {
+    font-family: Arial, sans-serif;
+    margin: 80px;
+    padding: 10px;
+  }
+  
+  
+  
+  .btn-query1 {
+    background-color: #fb911f; /* Example button color */
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 150px;
+    cursor: pointer;
+   
+  }
+  
+  .btn-query1:hover {
+    opacity: 0.8;
+  }
+  
+  .container1 {
+    background-color: #eee;  /* Example background color */
+    padding: 20px;
+    margin: 10px auto;
+    max-width: 980px;  /* Adjust for responsiveness */
+  }
+  
+  h2 {
+    margin-bottom: 15px;
+    font-size: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+/*   
+  #sparqlQueryForm {
+    /* Additional styles for the form */
+  /*} */
+  
+  #query {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* .result {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-top: 15px;
+    background-color:#000;
+  } */
+/* css de le table crée dans la page displayCalssAndSub */ 
+  /* tableau */
+table {
+  border-collapse: collapse;
+}
+.container {
+  width: 100%;
+}
+
+
+.table td,
+.table th {
+  /* padding: 0.75rem; */
+  vertical-align: top;
+  border-top: 2.5px solid #40bcfa;
+  border-left: 2.5px solid #40bcfa;
+  border-right: 2.5px solid #40bcfa;
+
+  /* min-width: 150px; Largeur minimale des cellules */
+  white-space: normal; /* Permettre le retour à la ligne dans les cellules */
+}
+.table thead th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #dee2e6;
+}
+.table tbody + tbody {
+  border-top: 2px solid #dee2e6;
+}
+.table .table {
+  background-color: #fff;
+}
+.table-sm td,
+.table-sm th {
+  padding: 0.3rem;
+}
+.table-bordered {
+  border: 1px solid #dee2e6;
+}
+.table-bordered td,
+.table-bordered th {
+  border: 1px solid #dee2e6;
+}
+.table-bordered thead td,
+.table-bordered thead th {
+  border-bottom-width: 2px;
+}
+.table-borderless tbody + tbody,
+.table-borderless td,
+.table-borderless th,
+.table-borderless thead th {
+  border: 0;
+}
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.table-hover tbody tr:hover {
+  background-color: rgba(0, 0, 0, 0.075);
+}
+.table-primary,
+.table-primary > td,
+.table-primary > th {
+  background-color: #b8daff;
+}
+.table-hover .table-primary:hover {
+  background-color: #9fcdff;
+}
+.table-hover .table-primary:hover > td,
+.table-hover .table-primary:hover > th {
+  background-color: #9fcdff;
+}
+.table-secondary,
+.table-secondary > td,
+.table-secondary > th {
+  background-color: #d6d8db;
+}
+.table-hover .table-secondary:hover {
+  background-color: #c8cbcf;
+}
+.table-hover .table-secondary:hover > td,
+.table-hover .table-secondary:hover > th {
+  background-color: #c8cbcf;
+}
+.table-success,
+.table-success > td,
+.table-success > th {
+  background-color: #c3e6cb;
+}
+.table-hover .table-success:hover {
+  background-color: #b1dfbb;
+}
+.table-hover .table-success:hover > td,
+.table-hover .table-success:hover > th {
+  background-color: #b1dfbb;
+}
+.table-info,
+.table-info > td,
+.table-info > th {
+  background-color: #bee5eb;
+}
+.table-hover .table-info:hover {
+  background-color: #abdde5;
+}
+.table-hover .table-info:hover > td,
+.table-hover .table-info:hover > th {
+  background-color: #abdde5;
+}
+.table-warning,
+.table-warning > td,
+.table-warning > th {
+  background-color: #ffeeba;
+}
+.table-hover .table-warning:hover {
+  background-color: #ffe8a1;
+}
+.table-hover .table-warning:hover > td,
+.table-hover .table-warning:hover > th {
+  background-color: #ffe8a1;
+}
+.table-danger,
+.table-danger > td,
+.table-danger > th {
+  background-color: #f5c6cb;
+}
+.table-hover .table-danger:hover {
+  background-color: #f1b0b7;
+}
+.table-hover .table-danger:hover > td,
+.table-hover .table-danger:hover > th {
+  background-color: #f1b0b7;
+}
+.table-light,
+.table-light > td,
+.table-light > th {
+  background-color: #fdfdfe;
+}
+.table-hover .table-light:hover {
+  background-color: #ececf6;
+}
+.table-hover .table-light:hover > td,
+.table-hover .table-light:hover > th {
+  background-color: #ececf6;
+}
+.table-dark,
+.table-dark > td,
+.table-dark > th {
+  background-color: #c6c8ca;
+}
+.table-hover .table-dark:hover {
+  background-color: #b9bbbe;
+}
+.table-hover .table-dark:hover > td,
+.table-hover .table-dark:hover > th {
+  background-color: #b9bbbe;
+}
+.table-active,
+.table-active > td,
+.table-active > th {
+  background-color: rgba(0, 0, 0, 0.075);
+}
+.table-hover .table-active:hover {
+  background-color: rgba(0, 0, 0, 0.075);
+}
+.table-hover .table-active:hover > td,
+.table-hover .table-active:hover > th {
+  background-color: rgba(0, 0, 0, 0.075);
+}
+.table .thead-dark th {
+  color: #fff;
+  background-color: #212529;
+  border-color: #32383e;
+}
+.table .thead-light th {
+  color: #495057;
+  background-color: #e9ecef;
+  border-color: #dee2e6;
+}
+.table-dark {
+  color: #fff;
+  background-color: #212529;
+}
+.table-dark td,
+.table-dark th,
+.table-dark thead th {
+  border-color: #32383e;
+}
+.table-dark.table-bordered {
+  border: 0;
+}
+.table-dark.table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+.table-dark.table-hover tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.075);
+}
+
+@media (max-width: 575.98px) {
+  .table-item-sm {
+    display: block;
+    /* width: 100%; */
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+  }
+  /* .table-item-sm > .table-bordered {
+    border: 0;
+  } */
+}
+@media (max-width: 767.98px) {
+  .table-item-md {
+    display: block;
+    /* width: 100%; */
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+  }
+  /* .table-item-md > .table-bordered {
+    border: 0;
+  } */
+}
+@media (max-width: 991.98px) {
+  .table-item-lg {
+    display: block;
+    /* width: 100%; */
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+  }
+  /* .table-item-lg > .table-bordered {
+    border: 0;
+  } */
+}
+@media (max-width: 1199.98px) {
+  .table-item-xl {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+  }
+  .table-item-xl > .table-bordered {
+    border: 0;
+  }
+}
+.table-item {
+  display: block;
+  margin: 2% auto; /* Ajoute une marge autour du tableau et le centre horizontalement */
+  margin-left: 7%;
+  /* width: 75%; Réduit la largeur du tableau à 75% de la largeur de son conteneur
+  max-width: 100%; Définit une largeur maximale pour le tableau */
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+  
+  /*  css of table of query */
+
+  .results-table {
+    border-collapse: collapse; /* Make table borders collapse into one */
+    width: 100%; /* Set table width to 100% of its container */
+    margin-top: 150px;
+    background-color: #ccc;
+  }
+  
+  .results-table th,
+  .results-table td {
+    padding: 10px; /* Add padding to cells */
+    border: 1px solid #ddd; /* Add thin border to cells */
+    text-align: left; /* Align content left */
+  }
+  
+  .results-table th {
+    background-color: #f2f2f2; /* Apply a light background color to headers */
+    font-weight: bold; /* Make headers bolder */
+  }
+  .result{
+    margin-left: 450px;
+    margin-top: 50px;
+    align-content: center;
+  }
+  .class-items{
+    align-content: center;
+    align-items: center;
+    margin-left: 250px;
+  }
+  .tabClas{
+    align-items: center;
+    margin-left: 200px;
+    font-size: bold;
+  }
+
+  /*  css du footer */
+  footer {
+    position: absolute;
+    bottom: 0 auto;
+    background-color: #fb9111;
+    width: 75%;
+    margin-left: 220px;
+    margin-right: 130px;
+    margin-top: 1700px;
+   
+  }
+  
+  .footer-content {
+   
+    justify-content: center; /* Centre le contenu horizontalement */
+  }
+  
+  .footer-section {
+    flex-basis: 30%;
+    margin-top: 20px;
+  }
+  
+  .footer-section h3 {
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+   
+  .footer-bottom {
+    background-color: #ddd;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  .footer-content {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .footer-section {
+    flex-basis: 30%;
+    margin-bottom: 20px;
+  }
+  
+  .footer-section h3 {
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-section p {
+    color: #111;
+    font-size: 14px;
+  }
+    
+  .footer-bottom {
+    background-color: #ddd;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  .footer-bottom p {
+    color: #111;
+    font-size: 12px;
+    margin: 0;
+  }
+  
+
+  /* css des classes et sous-classes */
+  .table-item1 {
+    display: flex;
+    margin: 2% auto; /* Ajoute une marge autour du tableau et le centre horizontalement */
+    margin-left: 7%;
+    /* width: 75%; Réduit la largeur du tableau à 75% de la largeur de son conteneur
+    max-width: 100%; Définit une largeur maximale pour le tableau */
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+  
+  }
+    
