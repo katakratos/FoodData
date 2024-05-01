@@ -766,4 +766,64 @@ table {
     -ms-overflow-style: -ms-autohiding-scrollbar;
   
   }
+
+  /* css pour afficher les classes et subclasses  */
+
+  .class-subclass {
+    
+    padding: 10px;
+    padding-left: 25px;
+    margin-right: 15px;
+    min-width: 20%;
+    max-width: 20%;
+}
+.class-subclass p {
+    font-size: 25px;
+    text-decoration: underline;
+    margin-bottom: 20px;
+    font-weight: bold;
+    
+}
+
+.class-subclass li{
+    transition: 0.3s ease;
+}
+.class-subclass li:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.class-subclass > ul > li {
+    color: indigo;
+    font-size: 20px;
+    margin-left: 35px;
+}
+.class-subclass > ul > ul > li {
+    color: rgb(72, 72, 199);
+    font-size: 18px;
+    margin-left: 50px !important;
+}
+
+
+.infos-food {
+  padding: 1% 0 1% 2%;
+  border-left: 4px solid gray;
+  border-bottom: 5px solid gray;
+  margin-right: 15px;
+  min-width: 30%;
+  max-width: 30%;
+}
+.infos-food p {
+  font-size: 25px;
+  text-decoration: underline;
+  margin-bottom: 20px;
+  font-weight: bold;
+  
+}
+.infos-food em {
+  font-size: 30px;
+  font-weight: bold;
+  color: gray;
+}
+
     

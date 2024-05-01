@@ -121,7 +121,7 @@ const query2=`PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
          });
 
          // Afficher le tableau de valeurs des classes
-         console.log(classesArray[2]);
+         //console.log(classesArray[2]);
 
          for (let food of classesArray) {
              var element = document.createElement("span");
@@ -206,7 +206,7 @@ const query2=`PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
      // Function pour afficher les instances d'une classe ou d'une sous classe
      function displayInstances(param) {
 
-         let searchQuery = document.getElementById("researchValue").value;
+          //let searchQuery = document.getElementById('${food.class}').value;
 
          document.querySelector(".instances").innerHTML = `<p style="text-align: center;">All Instances</p>`;
 
@@ -269,7 +269,7 @@ const query2=`PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
                                          
                                      element.innerHTML = `
                                              ${subclassHTML}
-                                     `;
+                                     `;bique
                                      
                                      document.querySelector(".instances").appendChild(element);
                              }
